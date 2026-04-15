@@ -2,14 +2,18 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>Gustó3D - Menú RA</title>
+    <title>Gustó3D - Menú Final</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+    <style>
+      /* Estilo para que el video de la cámara cubra toda la pantalla */
+      body { margin: 0; overflow: hidden; }
+    </a-scene>
+    </style>
   </head>
   <body>
     <a-scene mindar-image="imageTargetSrc: ./targets.mind; autoStart: true; uiLoading: yes; uiScanning: yes;" 
-             embedded 
-             color-space="sRGB" 
+             embedded color-space="sRGB" 
              renderer="colorManagement: true, physicallyCorrectLights" 
              vr-mode-ui="enabled: false" 
              device-orientation-permission-ui="enabled: false">
